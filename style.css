@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; 
+    background: black;
+}
+
+.container {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    background: #c8a8e3;
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; /* vertical */
+    /* justify-content: center; gorizont */ 
+}
+nav {
+    color: #c7f2ff;
+    flex-direction:column;
+    display: flex;
+    width: 100%;
+    border:2px solid #e60404;
+    border-radius: 5px;
+    justify-content: space-between;
+    background: #252830;
+}
+#VK {cursor: pointer;}
+.nav0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav01 {
+    /* border: 3px solid   red; */
+    padding-left: 6rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+#telephono {
+    /* border: 3px solid   red; */
+    font-size: small;
+    font-weight: 200;
+}
+.buttonCall {
+    /* border: 3px solid   red; */
+    align-items: center;
+    padding: 3px 3px 3px 3px ;
+    font-size: small;
+    font-weight: 100;
+    /* background: #12e012; */
+    background: #3f4658;
+    color: rgb(240,255,255);
+    border-radius: 10px;
+    width: 10rem;
+    /* padding: 3px; */
+    transition: color 1s;
+}
+.buttonCall:hover { 
+    background: #525c74; 
+    color:#f58a07 !important;
+    box-shadow: 5px 5px 5px #d9e012;
+    cursor: pointer;}
+.navTire {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    border-radius: 1.5rem;
+    background: inherit;
+    color: #d6cece;
+    text-align: center;
+}
+.nav1 {
+    display: flex;
+    
+    /* border:2px solid #e60404; */
+    border-radius: 5px;
+    background: #fff;
+    flex-direction: row;
+    margin: .5rem;
+    justify-content: space-around;
+    background: inherit;
+}
+.nav2 {
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2); 
+    padding: 1rem;
+    margin: 0 2px 0 2px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #777;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    /* border:2px solid #e60404; */
+    border-radius: 10px;
+    transition: color 1s;
+}
+.nav2:hover {
+    color:#f58a07 !important;
+    background: #313540;
+    box-shadow: 5px 5px 5px #d9e012;
+}
+
+.callMeWindow {
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+    background: #d3eb8c;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 17rem;
+    /* position: absolute; */
+    /* margin: auto; */
+    margin-top: 7%;
+    margin-left: 34%;
+    align-items:center;
+    /* transition: 1; */
+    position: absolute;
+    justify-content: space-between;
+
+}
+.X {
+    width: inherit;
+    border: 2px solid red;
+    height: 0.5rem;
+}
+#X1 {
+    /* flex: 1; */
+    background: inherit;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 3px;
+    border: 2px solid #e60404;
+    /* transition: calc(); */
+    position: relative;
+    top : -1.5rem;
+    left: calc(20rem + 0px);
+    opacity: 0.5;
+}
+#X1:hover {
+    opacity: 1;
+}
+.callMeX {
+    width:  inherit;
+    /* margin-left: ; */
+    display: flex;
+    background: inherit;
+    justify-content: space-between;
+    height: 3rem;
+}
+.callMeH {
+    text-align: center;
+    border: 2px solid #e60404;
+    flex: 1;
+
+}
+
+form {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    border: 2px solid #edf50b;
+    min-width : 100%;
+    align-items: center;
+    
+}
+.footerCallMe {
+    font-size: 0.5rem;
+}
+.input1 , .input2 ,#button1{
+    margin-bottom: 1rem;
+}
+input {outline:none;}
+input {
+    flex: 1;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid #252830;
+}
+label, input {
+    margin-bottom: 0.5rem;
+    /* display: block; */
+    /* width: 100px; */
+    flex: 1;
+    /* border: 2px solid #252830; */
+    padding-bottom: 5px;
+}
+.labelName , .labelPhone {
+    display: flex;
+}
+#button1 {
+    background: #e60404;
+    border:5px solid #e60404;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+#button1:hover {
+    /* border: 5px solid yellow; */
+    box-shadow: 0.3rem  0.5rem #70778a;
+}
+
+.hidden {
+    display: none;
+}
+
+main    {
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-image: url("images/_MG_9503.JPG");
+    height: 80vh;
+}
+footer {
+    display: flex;
+}
+
+.overflow {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
